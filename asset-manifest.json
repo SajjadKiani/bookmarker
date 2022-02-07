@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/bookmarker/static/css/main.783a540d.css",
+    "main.js": "/bookmarker/static/js/main.176a3027.js",
+    "static/media/Bookmark.png": "/bookmarker/static/media/Bookmark.97ad13dc5a8587723118.png",
+    "index.html": "/bookmarker/index.html",
+    "main.783a540d.css.map": "/bookmarker/static/css/main.783a540d.css.map",
+    "main.176a3027.js.map": "/bookmarker/static/js/main.176a3027.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.783a540d.css",
+    "static/js/main.176a3027.js"
+  ]
+}
