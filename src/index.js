@@ -7,16 +7,14 @@ import {Routes} from "./routers";
 import {AuthProvider} from "./contexts/Auth";
 
 ReactDOM.render(
-  <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename={'bookmarker/'}>
           <Switch>
               <AuthProvider>
                   {Routes.map((props,i) => {
-                        return <Route {...props} key={i} />
+                        return <Route exact={props.exact} {...props} key={i} />
                   })}
               </AuthProvider>
           </Switch>
       </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+  ,document.getElementById('root')
 );

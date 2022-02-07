@@ -65,7 +65,7 @@ function App() {
     }
 
     if (user === '') {
-        history.push('/login')
+        history.replace('/login')
     }
 
     return (
