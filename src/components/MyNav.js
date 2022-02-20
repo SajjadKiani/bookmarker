@@ -1,5 +1,4 @@
 import {Container, Nav, Navbar, Button, NavDropdown} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import {Link} from 'react-router-dom';
 import {useAuth} from "../contexts/Auth";
 import {Bookmark, PersonCircle} from "react-bootstrap-icons";
