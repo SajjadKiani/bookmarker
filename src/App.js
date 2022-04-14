@@ -27,7 +27,11 @@ function App() {
             .then((res) => {
                 setData(JSON.parse(res.data).map(d => d.fields))
             })
-            .catch((err) => {console.log(err)})
+            .catch((err) => {
+                console.log(err)
+                if (err.response.status === 401)
+                    history.replace('/login')
+            })
 
         // Category
         CategoryListAP(user)
@@ -62,10 +66,6 @@ function App() {
             setList (data.filter(data => filters[data.category] === true))
         else
             setList(data)
-    }
-
-    if (user === '') {
-        history.replace('/login')
     }
 
     return (

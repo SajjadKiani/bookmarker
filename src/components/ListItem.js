@@ -29,7 +29,7 @@ export default function ListItem ({data}) {
             </Card.Body>
             <Card.Subtitle>
                 <Row className={'justify-content-between'}>
-                    <Col><p className={'fw-light'}> {data.category}</p></Col>
+                    <Col><p className={'fw-light mx-3'}> {data.category}</p></Col>
                     <Col className={'col-2'}><Link onClick={() => setBookmarkDetailsShow(true)}><InfoCircle /></Link></Col>
                 </Row>
             </Card.Subtitle>

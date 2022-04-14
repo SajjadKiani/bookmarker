@@ -3,7 +3,7 @@ import Login from "../pages/login";
 import Signup from "../pages/signup";
 import Logout from "../pages/logout";
 import Home from "../pages/home";
-import UserDetails from "../components/UserDetails";
+import UserDetails from "../pages/UserDetails";
 
 export const Routes = [
     {path: '/' ,name: 'Bookmark' , component: Home , exact: true , showInNav: false},

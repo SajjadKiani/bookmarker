@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const serverPath = 'https://bookmarker-server-skmkiani.fandogh.cloud/app1/'
-// const serverPath = 'http://localhost:8000/app1/'
+// const serverPath = 'https://bookmarker-server-skmkiani.fandogh.cloud/app1/'
+const serverPath = 'http://localhost:8000/app1/'
 
 export const LoginAPI = (data) =>
     axios.post(`${serverPath}login/`,data)

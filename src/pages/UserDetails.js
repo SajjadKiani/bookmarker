@@ -1,4 +1,4 @@
-import MyNav from "./MyNav";
+import MyNav from "../components/MyNav";
 import {Card, Col, Container, Row} from "react-bootstrap";
 import {useEffect, useState} from "react";
 import {UserAPI} from "../services/api";
@@ -20,11 +20,11 @@ export default function UserDetails () {
 
 
     return (
-        <>
+        <div className="d-flex flex-column vh-100">
             <MyNav />
 
-            <Container className={'col-md-4 col-sm-7'}>
-                <Row className={'vh-100 mx-1 align-items-center'}>
+            <div className={'d-flex container col-md-4 flex-grow-1 col-sm-7 align-items-center justify-content-center'}>
+                <Row className={' mx-1 '}>
                     <Card>
                         <Card.Title><h1 className={'display-5 text-center mt-3'}>{userDetails.username}</h1></Card.Title>
                         <Card.Body>
@@ -52,7 +52,7 @@ export default function UserDetails () {
                         </Card.Body>
                     </Card>
                 </Row>
-            </Container>
-        </>
+            </div>
+        </div>
     )
 }
